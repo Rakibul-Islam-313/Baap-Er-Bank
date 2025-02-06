@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Inside</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-8">
+        Welcome to My
+        <span class="font-semibold text-violet-600"> Baap Ar Account</span> !!
+      </h1>
+      <h4 class="text-2xl text-center mt-4">
+        Let's <span class="text-orange-600">Get</span> some Mooooney
+      </h4>
+    </header>
+    <main>
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+          <div class="bg-red-400 p-8 rounded-xl">
+            <h4 class="text-2xl">Deposit</h4>
+            <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+          </div>
+          <div class="bg-rose-800 p-8 rounded-xl">
+            <h4 class="text-2xl">Withdraw</h4>
+            <h2 class="text-5xl">$<span id="withdraw-total">00</span>
+            </h2>
+          </div>
+          <div class="bg-lime-500 p-8 rounded-xl">
+            <h4 class="text-2xl">Balance</h4>
+            <h2 class="text-5xl">$<span id="balance-total">1500</span></h2>
+          </div>
+        </div>
+      </section>
+      <!-- Deposit and Withdraw  -->
+      <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-gray">
+          <div class="bg-purple-700 p-8 rounded-xl">
+            <h4 class="text-2xl mb-2">Please Deposit</h4>
+
+            <input class="w-9/12 mb-3 px-3 bg-white rounded-md drop-shadow-xl" type="text" name="" id="deposit-field" placeholder=" $  Amount You want to Deposit">
+
+            <br>           
+            <button class="rounded-md px-4 py-1 bg-orange-400 hover:bg-blue-600"id="btn-deposit"> Deposit
+            </button>
+          </div>
+          <div class="bg-indigo-400 p-8 rounded-xl">
+            <h4 class="text-2xl mb-2">Please Withdraw</h4>
+            <input  class="w-9/12 mb-3 px-3 bg-white rounded-md drop-shadow-xl" type="text" name="" id="withdraw-field" placeholder=" $ Amount You want to Withdraw">
+            <br>
+            <button class="rounded-md px-4 py-1 bg-orange-400 hover:bg-blue-600"id="btn-withdraw"> Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdraw.js"></script>
+  </body>
+</html>
